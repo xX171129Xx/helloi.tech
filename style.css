@@ -1,4 +1,97 @@
 html, body {
   height: 100%;
   width: 100%;
+  scrollbar-gutter: stable both-edges;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #32373c;
+  background-color: #32373c;
+  scroll-behavior: smooth;
+}
+button {
+  font-size: 1.5rem;
+  color: #32373c;
+  background-color: #32373c;
+  border: 1px solid #32373c;
+  border-radius: 3px;
+}
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+  html, body {
+  color: #ffffff;
+  background: #000000;
+}
+ a {
+  color: #ffffff;
+}
+   p {
+  color: #ffffff;
+}
+   h1 {
+  color: #ffffff;
+}
+}
+
+@media (prefers-color-scheme: light) {
+  /* Light theme styles go here */
+  html, body {
+  color: #222;
+  background: #ffffff;
+}
+ a {
+  color: #222;
+}
+   p {
+  color: #222;
+}
+   h1 {
+  color: #222;
+}
+}
+body.light-theme {
+  color: #222;
+  background: #ffffff;
+}
+body.light-theme a {
+  color: #222;
+}
+h1 {
+  color: #ffffff;
+}
+h3 {
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+}
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+.wrapper {
+  margin-inline: max(0px, ((100% - 64rem) / 2)); 
+}
+:root {
+  color-scheme: light dark; /* both supported */
 }
