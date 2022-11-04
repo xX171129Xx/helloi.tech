@@ -177,3 +177,6 @@ start = "vscode-css-language-server --stdio"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
+
+[languages.python3]
+pattern = "**/*.py"
